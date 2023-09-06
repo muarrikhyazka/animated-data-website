@@ -1,0 +1,40 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+}
+
+.container section {
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fffee1;
+}
+
+.container section .content{
+    max-width: 800px;
+    padding: 40px;
+    text-align: center;
+}
+
+@media (max-width:991px)
+{
+    .container {
+        position: aboslute;
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        transform: none !important; 
+    }
+}

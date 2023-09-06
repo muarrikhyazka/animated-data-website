@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="pinContainer">
+    <div id="slideContainer">
+      
+      <section id="sectionOne" class="panel">
+        <b>ONE - Image Sequence</b>
+        <div id="parallaxOne">
+          <img id="myimg" src="../../assets/img/example_imagesequence_01.png">
+        </div>
+      </section>
+      
+      <section id="sectionTwo" class="panel turqoise">
+        <b>TWO</b>
+        <div id="parallaxTwo">
+          <button class="custom-tooltip" data-template="one">One</button>
+          <button class="custom-tooltip" data-template="two">Two</button>
+          <button class="custom-tooltip" data-template="three">Three</button>
+          
+          <img class="layer1" src="http://pngimg.com/uploads/mario/mario_PNG109.png" alt="">
+          <h1 class="layer2">this is layer 2 from s2</h1>
+          <h1 class="layer3">this is layer 3 from s2</h1>
+        </div>
+      </section>
+      
+      <section id="sectionThree" class="panel green">
+        <b>THREE</b>
+        <div id="parallaxThree">
+          <img class="layer1" src="http://pngimg.com/uploads/mario/mario_PNG109.png" alt="">
+          <h1 class="layer2">this is layer 2 from s3</h1>
+          <h1 class="layer3">this is layer 3 from s3</h1>
+        </div>
+      </section>
+      
+      <section id="sectionFour" class="panel bordeaux">
+        <b>FOUR</b>
+      </section>
+    </div>
+    
+    <div id="sectionFive" class="last-scene">
+      <section class="pink">
+        <b>LAST</b>
+      </section>
+    </div>
+  </div>
+  
+  <!––Hidden HTML content for tooltips-->
+  <div style="display: none;">
+    <div id="one" class="tippy-popper">
+      <div class="tippy-tooltip" data-placement="top">
+        <div class="tippy-content">
+          <p>1. You can add any type of content here.</p>
+          <a href="http://vimeo.com/55887965" data-lity>iFrame Vimeo</a>
+          <a href="http://www.youtube.com/watch?v=XSGBVzeBUbk" data-lity>iFrame Youtube</a>
+        </div>
+      </div>
+    </div>
+    <div id="two" class="tippy-popper">
+      <div class="tippy-tooltip" data-placement="top">
+        <div class="tippy-content">
+          <p>2. You can add any type of content here.</p>
+        </div>
+      </div>
+    </div>
+    <div id="three" class="tippy-popper">
+      <div class="tippy-tooltip" data-placement="top">
+        <div class="tippy-content">
+          <p>3. You can add any type of content here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
