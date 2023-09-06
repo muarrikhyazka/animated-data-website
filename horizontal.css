@@ -9,11 +9,11 @@ body {
   .wrapper {
     display: flex;
     flex-direction: row;
-    /* width: 100vw; */
-    /* height: 100vh; */
+    width: 100vw;
+    height: 100vh;
     transform: rotate(90deg) translateY(-100vh); 
     transform-origin: top left;
-    /* position: absolute; */
+    position: absolute;
   }
   .one {
     /* background: url("bkg2.png"); */
