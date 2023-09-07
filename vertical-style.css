@@ -9,6 +9,7 @@
   font-family: sans-serif;
   position: relative;
 }
+
 h1 {
   line-height: 90vh;
 }
@@ -41,12 +42,26 @@ h1 {
 
 #text11 {
     font-weight: 1000;
-    font-size: 5em;
+    font-size: 7em;
 }
 
 #text12 {
     font-weight: 100;
     font-size: 2em;
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+}
+
+#text2 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 7em;
 }
 
 #fusion {
