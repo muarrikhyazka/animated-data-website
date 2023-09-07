@@ -13,7 +13,7 @@ body {
 #slideContainer {
   width: 200%;
   /* to contain 4 panels, each with 100% of window width */
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("./bg/Monas.gif");
   background-size: contain;
   background-repeat: no-repeat;
