@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
     margin: 0;
     padding: 0;
@@ -15,13 +16,37 @@ h1 {
   transition: all 300ms ease-in-out; 
 }
 
-#bg {
+.parallax {
     position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
 }
-.bg {
+.parallax img {
+    position: absolute;
     width: 100vw;
-    left: 0px;
-    top: 0px;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+#text1 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#text11 {
+    font-weight: 1000;
+    font-size: 5em;
+}
+
+#text12 {
+    font-weight: 100;
+    font-size: 2em;
 }
 
 #fusion {
