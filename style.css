@@ -1,0 +1,109 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#pinContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#slideContainer {
+  width: 200%;
+  /* to contain 4 panels, each with 100% of window width */
+  height: 100vh;
+  background-image: url("./bg/Monas.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  /* background-attachment: fixed; */
+  /* background: url(BPS-Datastory.gif) center center cover no-repeat fixed; */
+  /* background-size: cover; */
+  position: absolute
+}
+
+.panel {
+  height: 100%;
+  width: 25%;
+  /* relative to parent -> 25% of 400% = 100% of window width */
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.blue {
+  background-color: #3883d8;
+}
+
+.turqoise {
+  position: relative;
+  background-color: #38ced7;
+}
+
+.brown {
+  background-color: #a66f28;
+}
+
+.bordeaux {
+  background-color: #953543;
+}
+
+.pink {
+  background-color: pink;
+  height: 100vh;
+  width: 100vw;
+}
+
+#parallaxOne #myimg {
+  position: absolute;
+  left: 50%;
+}
+
+#parallaxTwo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+}
+#parallaxTwo h1,
+#parallaxTwo img {
+  position: absolute;
+  left: 0;
+}
+
+#parallaxThree {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+}
+#parallaxThree h1,
+#parallaxThree img {
+  position: absolute;
+  left: 0;
+}
+
+.custom-tooltip {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+}
+.custom-tooltip:first-of-type {
+  left: -5%;
+}
+.custom-tooltip:last-of-type {
+  left: 5%;
+}
+
+.tippy-content a {
+  color: white;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
