@@ -16,10 +16,10 @@ window.addEventListener('scroll', () => {
     
     if (value > 300) {
         text1.style.opacity = 0;
-        text1.style.marginTop = 299 * 2.5 + 200 +'px';
+        text1.style.marginTop = 299 * 2.5 + 500 +'px';
       } else {
         text1.style.opacity = 1;
-        text1.style.marginTop = value * 2.5 + 200 + 'px';
+        text1.style.marginTop = value * 2.5 + 500 + 'px';
       }
     text2.style.marginTop = value * 2.5 + 'px';
     if (value < 400) {
@@ -40,18 +40,18 @@ window.addEventListener('scroll', () => {
         rightmark.style.opacity = 1;
         
       }
-    if (value < 630) {
+    if (value < 550) {
       text2.style.marginTop = value * 1.1 + 'px';
       ufo.style.marginTop = value * 1.4 + 'px';
       leftmark.style.marginTop = value * 1.45 + 'px';
       rightmark.style.marginTop = value * 1.45 + 'px';
       text3.style.marginTop = value * 1.65 + 'px';
     } else {
-      text2.style.marginTop = 629 * 1.1 + 'px';
-      ufo.style.marginTop = 629 * 1.4 + 'px';
-      leftmark.style.marginTop = 629 * 1.45 + 'px';
-      rightmark.style.marginTop = 629 * 1.45 + 'px';
-      text3.style.marginTop = 629 * 1.65 + 'px';
+      text2.style.marginTop = 600 * 1.1  +10 + 'px';
+      ufo.style.marginTop = 600 * 1.4  + 10 +'px';
+      leftmark.style.marginTop = 600 * 1.45 + 10 +'px';
+      rightmark.style.marginTop = 600 * 1.45 + 10 +'px';
+      text3.style.marginTop = 600 * 1.7 + 10 +'px';
     }
 
     fusion.style.top = value * -1.5 + 'px';
