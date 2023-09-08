@@ -39,6 +39,7 @@
     bottom: 80%;
     left: 38%;
     display: inline-block;
+    margin: 0 auto;
 }
 
 #next-button {
@@ -48,6 +49,7 @@
     bottom: 80%;
     left: 56.5%;
     display: inline-block;
+    margin: 0 auto;
 }
 
 /* .btn-floating:hover {
@@ -57,13 +59,29 @@
 } */
 
 #back-button:hover {
-  width: 4.5%;
+  width: 6%;
+  height: 6%;
   cursor: pointer;
   display: inline-block;
 }
 
 #next-button:hover {
-  width: 4.5%;
+  width: 6%;
+  height: 6%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#back-button:active {
+  width: 5%;
+  height: 5%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#next-button:active {
+  width: 5%;
+  height: 5%;
   cursor: pointer;
   display: inline-block;
 }

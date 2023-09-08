@@ -8,6 +8,8 @@
   margin: 0;
   font-family: sans-serif;
   position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
 h1 {
@@ -22,6 +24,7 @@ h1 {
     display:flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100vh
 }
 .parallax img {
@@ -31,28 +34,41 @@ h1 {
     left: 0;
     top: 0;
     pointer-events: none;
+    display: flex;
+    justify-content: center;
 }
 
 #text1 {
     position: absolute;
+    margin-top: 200px;
     color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
 
 #text11 {
     font-weight: 1000;
-    font-size: 7em;
+    font-size: 5em;
+    padding: 100;
+    line-height: 1em;
 }
 
 #text12 {
     font-weight: 100;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .sec {
     position: relative;
     padding: 100px;
+}
+
+.last-part {
+  text-align: center;
+  margin:auto;
+  display: flex;
+  justify-content: center;
 }
 
 #text2 {
@@ -61,15 +77,92 @@ h1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 1000;
-    font-size: 7em;
+    font-size: 5em;
+    opacity: 0;
+    line-height: 1em;
 }
 
-#fusion {
-    z-index= -10;
-    position= fixed;
+#ufo-img{
+  height: 90%;  
+  width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+
 }
 
-/* Fade in, out Styles */
+#ufo {
+  /* height: 50%;  
+  width: 50%; */
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  opacity:0;
+  /* margin-top: 300px; */
+}
+
+#ufo:hover {
+  height: 45%;
+  width: 45%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#ufo:active {
+  height: 40%;
+  width: 40%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#text3 {
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  opacity: 0;
+  margin: 10px;
+}
+
+#leftmark {
+  height: 4%;  
+  width: 4%;
+  position: relative;
+  left: 30%;
+  display: flex;
+  opacity:0;
+}
+
+#rightmark {
+  height: 4%;  
+  width: 4%;
+  position: relative;  
+  left: -30%;
+  display: flex;
+  opacity: 0;
+}
+
+.loop {
+  animation: dim infinite alternate ease 1s;  
+}
+
+@keyframes dim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Fade in, out Styles*/
 .fade-in, .fade-out.inactive { /* End State */
   opacity: 1;
 }
@@ -97,4 +190,4 @@ h1 {
 }
 .rotate-ccw-90.inactive {
   transform: rotateZ(-90deg);
-}
+} 
