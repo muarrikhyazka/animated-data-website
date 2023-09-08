@@ -47,14 +47,14 @@ window.addEventListener('scroll', () => {
       rightmark.style.marginTop = value * 1.45 + 'px';
       text3.style.marginTop = value * 1.65 + 'px';
     } else {
-      text2.style.marginTop = 600 * 1.1  +10 + 'px';
-      ufo.style.marginTop = 600 * 1.4  + 10 +'px';
-      leftmark.style.marginTop = 600 * 1.45 + 10 +'px';
-      rightmark.style.marginTop = 600 * 1.45 + 10 +'px';
-      text3.style.marginTop = 600 * 1.7 + 10 +'px';
+      text2.style.marginTop = 600 * 1.1  +200 + 'px';
+      ufo.style.marginTop = 600 * 1.4  + 200 +'px';
+      leftmark.style.marginTop = 600 * 1.45 + 200 +'px';
+      rightmark.style.marginTop = 600 * 1.45 + 200 +'px';
+      text3.style.marginTop = 600 * 1.7 + 200 +'px';
     }
 
-    fusion.style.top = value * -1.5 + 'px';
+    fusion.style.top = value * -1 + 'px';
     ruangkendali.style.top = value * -1.5 + 'px';
     kaca.style.top = value * -1.5 + 'px';
 
