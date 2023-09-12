@@ -14,7 +14,7 @@ body {
 }
 
 #slideContainer {
-  width: 200%;
+  /* width: 500%; */
   /* to contain 4 panels, each with 100% of window width */
   height: 100vh;
   
