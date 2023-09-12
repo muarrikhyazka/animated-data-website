@@ -62,6 +62,8 @@ body {
 #parallaxOne #myimg {
   position: absolute;
   left: 50%;
+  margin: 10%;
+  width: 100vw;
 }
 
 #parallaxTwo {
@@ -109,4 +111,24 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
+
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+
+section {
+  margin : 1% !important;
+  padding: 2px !important;
+  padding-left : 1px !important;
+  padding-right: 1px !important;
+  width: 100vw;
+}
+/* section > div {
+  min-height : 100px;
+  background-color : #c14543;
+  margin : 2px !important;
+} */
+
 
