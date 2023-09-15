@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Line Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="lineChart" width="800" height="400"></canvas>
+
+    <script>
+        // Data for the chart
+        var data = {
+            labels: ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+            datasets: [
+                {
+                    label: 'Australia',
+                    data: [2.449888641, 2.487922705, 1.508366722, 1.276990945, 1.948647409, 1.911400944, 1.610767873, 0.846905537, 2.863910422, 6.594096713],
+                    borderColor: 'rgba(0, 0, 255, 1)', // Blue color for the line
+                    fill: false
+                },
+                {
+                    label: 'Brazil',
+                    data: [6.204310666, 6.329040155, 9.029901024, 8.739143523, 3.44637335, 3.664850284, 3.732976212, 3.211768038, 8.301659756, 9.28010609],
+                    borderColor: 'rgba(255, 0, 0, 1)', // Red color for the line
+                    fill: false
+                },
+                {
+                    label: 'Canada',
+                    data: [0.938291898, 1.906635907, 1.125241361, 1.428759547, 1.596884129, 2.268225672, 1.949269024, 0.716999632, 3.395193185, 6.802801153],
+                    borderColor: 'rgba(0, 255, 0, 1)', // Green color for the line
+                    fill: false
+                },
+                // Add datasets for other countries in a similar manner
+                {
+                    label: 'Indonesia',
+                    data: [6.412513302, 6.394925408, 6.363121131, 3.525805157, 3.80879807, 3.198346416, 3.03058665, 1.920968006, 1.560129905, 4.209463834],
+                    borderColor: 'rgba(255, 255, 0, 1)', // Yellow color for the line
+                    fill: false
+                },
+                {
+                    label: 'Japan',
+                    data: [0.335037912, 2.759226714, 0.795279631, -0.127258844, 0.484199796, 0.989094598, 0.468776159, -0.024995834, -0.233352779, 2.497702782],
+                    borderColor: 'rgba(128, 128, 128, 1)', // Gray color for the line
+                    fill: false
+                },
+                {
+                    label: 'United States',
+                    data: [1.464832656, 1.622222977, 0.118627136, 1.261583206, 2.130110004, 2.442583297, 1.812210075, 1.233584396, 4.697858864, 8.002799821],
+                    borderColor: 'rgba(255, 0, 255, 1)', // Purple color for the line
+                    fill: false
+                },
+                {
+                    label: 'China',
+                    data: [2.621050017, 1.921641628, 1.437023809, 2.000001822, 1.593136001, 2.0747904, 2.899234164, 2.419421895, 0.981015136, 1.973575557],
+                    borderColor: 'rgba(255, 165, 0, 1)', // Orange color for the line
+                    fill: false
+                },
+            ]
+        };
+
+        // Get the canvas element
+        var ctx = document.getElementById('lineChart').getContext('2d');
+
+        // Create the line chart
+        var lineChart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Value'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
