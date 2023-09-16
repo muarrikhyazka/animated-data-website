@@ -1,65 +1,23 @@
-let text1 = document.getElementById('text1');
-let ruangkendali = document.getElementById('ruangkendali');
-let kaca = document.getElementById('kaca');
-let text2 = document.getElementById('text2');
-let fusion = document.getElementById('fusion');
-let text3 = document.getElementById('text3');
-let ufo = document.getElementById('ufo');
-let leftmark = document.getElementById('leftmark');
-let rightmark = document.getElementById('rightmark');
+let text1 = document.getElementById('text1-c');
+let black = document.getElementById('black');
+let blueCircle = document.getElementById('blue-circle');
+let text2 = document.getElementById('text2-c');
+let blueCloud = document.getElementById('blue-cloud');
+let whiteCloud = document.getElementById('white-cloud');
+let globe = document.getElementById('globe');
+
 
 
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-    console.log(value);
+
+    text1.style.marginTop = value * 2.5 + 200 + 'px';
+
+    // text2.style.marginTop = value * 2.5 + 200 + 'px';
 
     
-    if (value > 300) {
-        text1.style.opacity = 0;
-        text1.style.marginTop = 299 * 2.5 + 700 +'px';
-      } else {
-        text1.style.opacity = 1;
-        text1.style.marginTop = value * 2.5 + 700 + 'px';
-      }
-    text2.style.marginTop = value * 2.5 + 'px';
-    if (value < 400) {
-        text2.style.opacity = 0;
-        text3.style.opacity = 0;
-        ufo.style.opacity = 0;
-        leftmark.style.opacity = 0;
-        rightmark.style.opacity = 0;
-        leftmark.classList.remove("loop");
-        rightmark.classList.remove("loop");
-      } else {
-        text2.style.opacity = 1;
-        text3.style.opacity = 1;
-        ufo.style.opacity = 1;
-        leftmark.classList.add("loop");
-        rightmark.classList.add("loop");
-        leftmark.style.opacity = 1;
-        rightmark.style.opacity = 1;
-        
-      }
-
-      
-    if (value < 550) {
-      text2.style.marginTop = value * 0.08 + '%';
-      ufo.style.marginTop = value * 0.28 + '%';
-      leftmark.style.marginTop = value * 0.28 + '%';
-      rightmark.style.marginTop = value * 0.28 + '%';
-      text3.style.marginTop = value * 0.12 + '%';
-    } else {
-      text2.style.marginTop = 600 * 0.08  +10 + '%';
-      ufo.style.marginTop = 600 * 0.28  + 10 +'%';
-      leftmark.style.marginTop = 600 * 0.28 + 10 +'%';
-      rightmark.style.marginTop = 600 * 0.28 + 10 +'%';
-      text3.style.marginTop = 600 * 0.12 + 10 +'%';
-    }
-
-    fusion.style.top = value * -1.5 + 'px';
-    ruangkendali.style.top = value * -1.5 + 'px';
-    kaca.style.top = value * -1.5 + 'px';
+   
 
 
 
