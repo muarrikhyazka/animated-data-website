@@ -29,14 +29,14 @@ window.addEventListener('scroll', () => {
         ufo.style.opacity = 0;
         leftmark.style.opacity = 0;
         rightmark.style.opacity = 0;
-        leftmark.classList.remove("loop");
-        rightmark.classList.remove("loop");
+        leftmark.classList.remove("opacity-loop");
+        rightmark.classList.remove("opacity-loop");
       } else {
         text2.style.opacity = 1;
         text3.style.opacity = 1;
         ufo.style.opacity = 1;
-        leftmark.classList.add("loop");
-        rightmark.classList.add("loop");
+        leftmark.classList.add("opacity-loop");
+        rightmark.classList.add("opacity-loop");
         leftmark.style.opacity = 1;
         rightmark.style.opacity = 1;
         
