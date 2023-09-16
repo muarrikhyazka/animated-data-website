@@ -38,35 +38,18 @@ $(function () {
     .setTween(tween2)
     .addTo(controller); //add this scene to the same scroll container
   
-    // build tween for animations on sectionThree
-    var tween3 = new TimelineMax ()
-      .add([
-        TweenMax.fromTo("#parallaxTwo", 1, {
-          scale:2, left: 0, opacity: -3
-        }, {
-          scale:1, left: "-40%", opacity: 1
-        })
-      ]);
-
-    // build scene for tween3
-    new ScrollMagic.Scene({
-      triggerElement: "#pinContainer", 
-      duration: "100%", 
-      offset: "50%"
-    })
-    .setTween(tween3)
-    .addTo(controller);
+   
 
 
     // build tween for animations on sectionThree
     var tween4 = new TimelineMax ()
       .add([
-        TweenMax.fromTo("#parallaxThree", 1, {
-          opacity: -3, left: 0
-        }, {
-          opacity: 2, left: "-65%"
-        }),
         TweenMax.fromTo("#parallaxTwo", 1, {
+          opacity: -5, left: 0
+        }, {
+          opacity: 1, left: "-35%"
+        }),
+        TweenMax.fromTo("#parallaxOne", 1, {
           opacity: 6
         }, {
           opacity: -1
@@ -76,7 +59,7 @@ $(function () {
     // build scene for tween3
     new ScrollMagic.Scene({
       triggerElement: "#pinContainer", 
-      duration: "300%", 
+      duration: "100%", 
       offset: "50%"
     })
     .setTween(tween4)
