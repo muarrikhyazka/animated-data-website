@@ -62,9 +62,9 @@ $(function () {
     var tween4 = new TimelineMax ()
       .add([
         TweenMax.fromTo("#parallaxThree", 1, {
-          opacity: -3
+          opacity: -3, left: 0
         }, {
-          opacity: 2
+          opacity: 2, left: "-65%"
         }),
         TweenMax.fromTo("#parallaxTwo", 1, {
           opacity: 6
