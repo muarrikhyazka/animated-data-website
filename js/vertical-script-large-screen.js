@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
     
     if (value > 300) {
         text1.style.opacity = 0;
-        text1.style.marginTop = 299 * 2.5 + 700 +'px';
+        text1.style.marginTop = 299 * 0 + 700 +'px';
       } else {
         text1.style.opacity = 1;
         text1.style.marginTop = value * 2.5 + 700 + 'px';
