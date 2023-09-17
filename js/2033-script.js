@@ -26,11 +26,6 @@ $(function () {
           opacity:3
         }, {
           opacity:0
-        }),
-        TweenMax.fromTo("#parallaxTwo", 1, {
-          opacity: 0
-        }, {
-          opacity: 0
         })
       ]);
 
@@ -49,7 +44,7 @@ $(function () {
         TweenMax.fromTo("#parallaxTwo", 1, {
           scale:2, left: 0, opacity: -3
         }, {
-          scale:1, left: "-40%", opacity: 1
+          scale:1, left: "-35%", opacity: 1
         })
       ]);
 

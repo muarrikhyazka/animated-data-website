@@ -212,3 +212,18 @@ section {
   align-items: center;
 }
 
+.horizontal {
+  flex-direction:row;
+
+}
+
+.row img {
+  height:50%;
+  width:50%;
+}
+
+.vertical-center {
+  display: flex;
+  justify-content: center;
+}
+

@@ -26,11 +26,6 @@ $(function () {
           opacity:3
         }, {
           opacity:0
-        }),
-        TweenMax.fromTo("#parallaxTwo", 1, {
-          opacity: 0
-        }, {
-          opacity: 0
         })
       ]);
 

@@ -100,6 +100,16 @@ body {
   width: 100%;
   opacity: 0;
 }
+
+@media screen and (min-width: 1600px) {
+  #parallaxTwo {
+  -webkit-transform:scale(4);
+  -moz-transform:scale(4);
+  -ms-transform:scale(4);
+  transform:scale(4);
+  }
+}
+
 #parallaxTwo h1,
 #parallaxTwo img {
   position: absolute;
@@ -210,5 +220,54 @@ section {
 .center {
   text-align: center;
   align-items: center;
+}
+
+.col-lg-12, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-6, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1,
+.col-md-12, .col-md-10, .col-md-9, .col-md-8, .col-md-6, .col-md-4, .col-md-3, .col-md-2, .col-md-1 {
+  /* margin : 3px; */
+  /* padding: 6px; */
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.row {
+  padding: 3px;
+}
+
+
+#papan-dijual {
+  height: 90px;
+  width: 90px;
+  margin-top: 4.5%;
+  margin-left: 69%;
+}
+
+#papan-dijual-btn:hover {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+#papan-dijual-btn:active {
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.scale-loop {
+  animation: endless-in infinite 4s linear;
+}
+
+@keyframes endless-in {
+  10% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.1);
+  
+  }
+  80% {
+    transform: scale(1);
+  }
 }
 

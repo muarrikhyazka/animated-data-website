@@ -30,7 +30,7 @@ $(function () {
         TweenMax.fromTo("#parallaxTwo", 1, {
           opacity: 0
         }, {
-          opacity: 0
+          opacity: -3
         })
       ]);
 
@@ -47,7 +47,7 @@ $(function () {
     var tween3 = new TimelineMax ()
       .add([
         TweenMax.fromTo("#parallaxTwo", 1, {
-          scale:2, left: 0, opacity: -3
+          scale:0, left: "20%", opacity: -3
         }, {
           scale:1, left: "-40%", opacity: 1
         })
@@ -67,9 +67,9 @@ $(function () {
     var tween4 = new TimelineMax ()
       .add([
         TweenMax.fromTo("#parallaxThree", 1, {
-          opacity: -3, left: 0
+          opacity: -5, left: "-60%"
         }, {
-          opacity: 2, left: "-65%"
+          opacity: 2, left: "-60%"
         }),
         TweenMax.fromTo("#parallaxTwo", 1, {
           opacity: 6
