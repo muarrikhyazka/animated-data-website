@@ -47,11 +47,11 @@ window.addEventListener('scroll', () => {
       rightmark.style.marginTop = value * 1.45 + 'px';
       text3.style.marginTop = value * 1.65 + 'px';
     } else {
-      text2.style.marginTop = 600 * 1.1  + 0 + 'px';
-      ufo.style.marginTop = 600 * 1.4  + 0 +  'px';
-      leftmark.style.marginTop = 600 * 1.45 + 0 +  'px';
-      rightmark.style.marginTop = 600 * 1.45 + 0 +  'px';
-      text3.style.marginTop = 600 * 1.7 + 0 +  'px';
+      text2.style.marginTop = 550 * 1.1  + 100 + 'px';
+      ufo.style.marginTop = 550 * 1.4  + 100 +  'px';
+      leftmark.style.marginTop = 550 * 1.45 + 100 +  'px';
+      rightmark.style.marginTop = 550 * 1.45 + 100 +  'px';
+      text3.style.marginTop = 550 * 1.7 + 100 +  'px';
     }
 
     fusion.style.top = value * -1.47 + 'px';
