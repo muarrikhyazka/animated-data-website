@@ -23,9 +23,9 @@ $(function () {
     var tween2 = new TimelineMax ()
       .add([
         TweenMax.fromTo("#parallaxOne", 1, {
-          opacity:3
+          opacity:3, left:0
         }, {
-          opacity:0
+          opacity:0, left:0
         })
       ]);
 
@@ -66,4 +66,8 @@ $(function () {
   $(document).on('click', '[data-lightbox]', lity);
   
 });
+
+document.getElementById("warningButton1").onclick = function () {
+  location.href = "www.google.com";
+};
 

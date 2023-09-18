@@ -218,12 +218,31 @@ section {
 }
 
 .row img {
-  height:50%;
-  width:50%;
+  height:80px;
+  width:80px;
+  position: absolute;
+  display: inline-block;
+}
+
+.row h4 {
+  position: relative;
+  display: inline-block;
 }
 
 .vertical-center {
   display: flex;
   justify-content: center;
+}
+
+.warning-btn:hover {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.warning-btn:active {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 }
 
