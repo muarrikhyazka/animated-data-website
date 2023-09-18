@@ -28,7 +28,7 @@ body {
   /* display: flex;
   justify-content: space-evenly;
   align-items: center; */
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .panel {
@@ -235,23 +235,33 @@ section {
 }
 
 
-#papan-dijual {
+/* #papan-dijual {
   height: 90px;
   width: 90px;
   margin-top: 4.5%;
   margin-left: 69%;
+} */
+
+#papan-dijual-btn {
+  height: 90px;
+  width: 90px;
+  /* margin-top: -250px;
+  margin-bottom: 250px;
+  left: 500px; */
 }
 
 #papan-dijual-btn:hover {
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   cursor: pointer;
+  /* display: inline-block; */
 }
 
 #papan-dijual-btn:active {
   height: 80px;
   width: 80px;
   cursor: pointer;
+  /* display: inline-block; */
 }
 
 .scale-loop {
@@ -271,3 +281,6 @@ section {
   }
 }
 
+#popup {
+  visibility: hidden;
+}

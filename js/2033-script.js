@@ -67,7 +67,39 @@ $(function () {
   
 });
 
-// document.getElementById("warningButton1").onclick = function () {
-//   location.href = "www.google.com";
-// };
+document.getElementById("warning-btn-1").onclick = function () {
+  var x = document.getElementById("warning-img-1");
+  if (x.style.visibility == "visible") {
+    x.style.visibility = "hidden";
+  } else {
+    x.style.visibility = "visible";
+  }
+};
+
+document.getElementById("warning-btn-2").onclick = function () {
+  var x = document.getElementById("warning-img-2");
+  if (x.style.visibility == "visible") {
+    x.style.visibility = "hidden";
+  } else {
+    x.style.visibility = "visible";
+  }
+};
+
+document.getElementById("warning-btn-3").onclick = function () {
+  var x = document.getElementById("warning-img-3");
+  if (x.style.visibility == "visible") {
+    x.style.visibility = "hidden";
+  } else {
+    x.style.visibility = "visible";
+  }
+};
+
+document.getElementById("warning-btn-4").onclick = function () {
+  var x = document.getElementById("warning-img-4");
+  if (x.style.visibility == "visible") {
+    x.style.visibility = "hidden";
+  } else {
+    x.style.visibility = "visible";
+  }
+};
 

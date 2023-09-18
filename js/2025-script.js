@@ -95,5 +95,12 @@ $(function () {
   
 });
 
-
+document.getElementById("papan-dijual-btn").onclick = function () {
+  var x = document.getElementById("popup");
+  if (x.style.visibility == "visible") {
+    x.style.visibility = "hidden";
+  } else {
+    x.style.visibility = "visible";
+  }
+};
 
