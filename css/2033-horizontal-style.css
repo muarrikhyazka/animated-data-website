@@ -217,21 +217,27 @@ section {
 
 }
 
-.row img {
+.col-md-3 img {
   height:80px;
   width:80px;
-  position: absolute;
+  position: absolute !important;
   display: inline-block;
 }
 
-.row h4 {
+.col-md-3 h4 {
   position: relative;
-  display: inline-block;
+  flex-direction:row;
+  display: flex;
 }
 
 .vertical-center {
   display: flex;
   justify-content: center;
+}
+
+.warning-btn {
+  z-index:200px;
+  position: fixed !important;
 }
 
 .warning-btn:hover {

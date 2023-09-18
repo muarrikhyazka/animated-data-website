@@ -67,7 +67,7 @@ $(function () {
   
 });
 
-document.getElementById("warningButton1").onclick = function () {
-  location.href = "www.google.com";
-};
+// document.getElementById("warningButton1").onclick = function () {
+//   location.href = "www.google.com";
+// };
 
