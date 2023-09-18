@@ -2,6 +2,7 @@ let text1 = document.getElementById('text1-c');
 let black = document.getElementById('black');
 let blueCircle = document.getElementById('blue-circle');
 let text2 = document.getElementById('text2-c');
+let text3 = document.getElementById('text3-c');
 let blueCloud = document.getElementById('blue-cloud');
 let whiteCloud = document.getElementById('white-cloud');
 let globe = document.getElementById('globe');

@@ -223,7 +223,20 @@ h1 {
   /* opacity: 0; */
   font-size:1.75em;
   line-height: 1em;
-  margin-top: 180%;
+  margin-top: 170%;
+}
+
+
+#text3-c {
+  width: 80vw;
+  position: absolute;
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+  /* opacity: 0; */
+  line-height: 1em;
+  margin-top: 200%;
 }
 
 .scale-loop-1 {
